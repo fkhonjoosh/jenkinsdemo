@@ -1,1 +1,1 @@
-Hallo Word
+echo "Hallo World ...... %date% : %time% "
