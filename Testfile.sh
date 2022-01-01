@@ -10,8 +10,12 @@ if [ -f "$PFADNAME\readme.txt" ]
   then
     echo "Die Datei readme.txt ist da."
     cd "$PFAD_NAME"
-    mkdir "$ZIEL_DIR"
-    cp  "$PFADNAME\readme.txt" "$PFAD_NAME\"$ZIEL_DIR\"readme.txt"
+    if [ ! -d "$ZIEL_DIR" ] 
+    then
+         mkdir "$ZIEL_DIR"
+    fi
+    echo "$PFAD_NAME\\$ZIEL_DIR"
+    cp $PFADNAME\\readme.txt "$PFAD_NAME\\$ZIEL_DIR\readme.txt"
 
   elif [ -d "$PFADNAME\readme.txt" ]
     then
