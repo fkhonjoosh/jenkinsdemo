@@ -6,12 +6,12 @@ node {
                 echo 'I only execute on the master branch'
                 } else {
                          echo 'Test Branch'
+                         sh 'Helloworld.sh'
                 }
            }
            stage("HelloWorld") {
                 steps {
                          echo 'this is HelloWorld stage ...'
-                         sh 'Helloworld.sh'
                       }
            }
      }
