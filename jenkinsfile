@@ -5,7 +5,7 @@ node {
         stage("First") {
             steps {
                   echo 'this is first stage ...'
-                  sh 'HelloWorld.sh'
+                  sh 'Helloword.sh'
             }
         }
         stage("Second") {
